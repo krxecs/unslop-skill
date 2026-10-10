@@ -1,0 +1,7 @@
+interface:
+  display_name: "Unslop"
+  short_description: "Make prose sound human"
+  default_prompt: "Use $unslop to make this prose clearer and less AI-written."
+
+policy:
+  allow_implicit_invocation: true

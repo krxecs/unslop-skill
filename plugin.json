@@ -1,0 +1,35 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "unslop",
+  "version": "0.1.0",
+  "description": "Edit prose to remove AI-sounding language while preserving the writer's meaning and tone.",
+  "author": {
+    "name": "krxecs"
+  },
+  "homepage": "https://github.com/krxecs/unslop-skill",
+  "repository": "https://github.com/krxecs/unslop-skill",
+  "license": "MIT",
+  "keywords": [
+    "writing",
+    "editing",
+    "rewrite",
+    "plain-language",
+    "style"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Unslop",
+        "shortDescription": "Make prose sound human",
+        "longDescription": "Edits user-provided prose to remove AI-sounding phrasing, filler, jargon, and mannered style while preserving its meaning and intended tone. Use it for editing, rewriting, polishing, or making prose sound less AI-written. It does not apply to code, verbatim quotations, or text the user explicitly asks to preserve unchanged.",
+        "developerName": "krxecs",
+        "category": "Productivity",
+        "capabilities": [],
+        "defaultPrompt": "Use $unslop to make this prose clearer and less AI-written: [paste text]",
+        "brandColor": "#334155",
+        "composerIcon": "./assets/unslop.svg",
+        "logo": "./assets/unslop.svg"
+      }
+    }
+  }
+}

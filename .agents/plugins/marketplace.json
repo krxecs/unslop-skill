@@ -1,0 +1,20 @@
+{
+  "name": "unslop-local",
+  "interface": {
+    "displayName": "Unslop local"
+  },
+  "plugins": [
+    {
+      "name": "unslop",
+      "source": {
+        "source": "local",
+        "path": "./"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

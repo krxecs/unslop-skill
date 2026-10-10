@@ -1,0 +1,16 @@
+# Operating-system files
+.DS_Store
+Thumbs.db
+
+# Editor and temporary files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Generated release archives
+/dist/
+
+# Local Codex state
+/.codex/
