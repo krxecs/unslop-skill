@@ -1,14 +1,15 @@
 {
-  "name": "unslop-local",
+  "name": "unslop",
   "interface": {
-    "displayName": "Unslop local"
+    "displayName": "Unslop"
   },
   "plugins": [
     {
       "name": "unslop",
       "source": {
-        "source": "local",
-        "path": "./"
+        "source": "url",
+        "url": "https://github.com/krxecs/unslop-skill.git",
+        "ref": "main"
       },
       "policy": {
         "installation": "AVAILABLE",
