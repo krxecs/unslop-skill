@@ -1,8 +1,8 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "unslop",
-  "version": "0.1.0",
-  "description": "Edit prose to remove AI-sounding language while preserving the writer's meaning and tone.",
+  "version": "0.2.0",
+  "description": "Apply a plain, natural writing style to user-visible non-code text when ChatGPT or Codex drafts, rewrites, or explains in natural language.",
   "author": {
     "name": "krxecs"
   },
@@ -20,12 +20,12 @@
     "com.openai": {
       "interface": {
         "displayName": "Unslop",
-        "shortDescription": "Make prose sound human",
-        "longDescription": "Edits user-provided prose to remove AI-sounding phrasing, filler, jargon, and mannered style while preserving its meaning and intended tone. Use it for editing, rewriting, polishing, or making prose sound less AI-written. It does not apply to code, verbatim quotations, or text the user explicitly asks to preserve unchanged.",
+        "shortDescription": "Use plain, natural prose",
+        "longDescription": "Applies a plain, natural writing style to user-visible non-code text when ChatGPT or Codex drafts, rewrites, or explains. It is eligible for implicit selection on matching writing tasks. Use @Unslop in ChatGPT or $unslop in Codex when you need to require it for a specific request. It does not guarantee use on every reply and does not change code, commands, quoted text, or text you ask to preserve unchanged.",
         "developerName": "krxecs",
         "category": "Productivity",
         "capabilities": [],
-        "defaultPrompt": "Use $unslop to make this prose clearer and less AI-written: [paste text]",
+        "defaultPrompt": "Apply Unslop to this non-code text: [paste text]",
         "brandColor": "#334155",
         "composerIcon": "./assets/unslop.svg",
         "logo": "./assets/unslop.svg"
