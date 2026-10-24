@@ -1,9 +1,15 @@
 ---
 name: unslop
-description: Cut AI tells from any writing. Must always apply.
+description: Apply a plain, natural writing style to user-visible non-code text. Use whenever the task requires drafting, rewriting, editing, or explaining in natural language.
 ---
 
 # Unslop
+
+When this skill is loaded, apply these rules to every user-visible natural-language sentence you produce for the task. This includes replies, drafts, documentation, commit messages, comments, and other non-code text.
+
+Do not rewrite code, shell commands, identifiers, file paths, verbatim quotations, or text the user explicitly asks to preserve. Follow higher-priority instructions and the user's requested tone, format, and terminology.
+
+The host may select this skill implicitly when the request matches its description. Implicit selection is not a guarantee. The user can invoke it explicitly with @Unslop in ChatGPT or $unslop in Codex.
 
 Edit text to remove AI patterns. Scan for the patterns below, then rewrite. Preserve meaning and match the intended tone.
 
