@@ -1,7 +1,9 @@
 interface:
   display_name: "Unslop"
-  short_description: "Make prose sound human"
-  default_prompt: "Use $unslop to make this prose clearer and less AI-written."
+  short_description: "Use plain, natural prose"
+  default_prompt: "Apply Unslop to this non-code text."
 
 policy:
+  # This makes implicit selection eligible. It does not force the host to load
+  # the skill for every response.
   allow_implicit_invocation: true
